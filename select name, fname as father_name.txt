@@ -1,0 +1,5 @@
+select name, fname as father_name
+, mname as mother_name, email, course_id as course from studentsinfo
+
+
+SELECT  studentsinfo.*, student_marks.Marks FROM studentsinfo LEFT JOIN student_marks ON studentsinfo.id = student_marks.student_id  ORDER BY studentsinfo.name ASC ;
